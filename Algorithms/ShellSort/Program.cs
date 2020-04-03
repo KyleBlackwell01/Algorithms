@@ -9,7 +9,7 @@ namespace ShellSort
 {
     public class Program
     {
-        static void shellSort(int[] arr, int n)
+        public static void shellSort(int[] arr, int n)
         {
             int i, j, pos, temp;
             pos = 3;

@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShellSort\ShellSort.csproj">
+      <Project>{fb8a4f78-7b45-4cb9-a758-f5c0deb7d7ef}</Project>
+      <Name>ShellSort</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
