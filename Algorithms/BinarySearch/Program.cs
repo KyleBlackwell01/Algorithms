@@ -12,7 +12,8 @@ namespace BinarySearch
     {
         static void Main(string[] args)
         {
-            using (var reader = new StreamReader(@"D:\Coding\unsorted_numbers.csv"))
+            //Initializes CSV via System.IO
+            using (var reader = new StreamReader("unsorted_numbers.csv"))
             {
                 var testArr = reader.ReadToEnd()
                     .Split('\n')
@@ -22,14 +23,20 @@ namespace BinarySearch
 
                 int n = testArr.Length;
 
+                //Sorts via ShellSort reference to prepare for binary search
                 ShellSort.Program.shellSort(testArr, n);
 
-                PrintVals(testArr);
+
+                //Used to check if array is working.
+                //PrintVals(testArr); 
+
+
+                Console.WriteLine("Please enter a number to find:");
 
                 SearchNumber(testArr, int.Parse(Console.ReadLine()));
 
 
-                Console.WriteLine("Testing");
+                Console.WriteLine("Press any key to exit");
                 Console.ReadKey();
             }
         }

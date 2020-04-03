@@ -13,10 +13,11 @@ namespace LinearSearch
 
         static void Main(string[] args)
         {
-            linearIndex(int.Parse(Console.ReadLine()));
-            Console.ReadLine();
 
-            Console.WriteLine("test");
+            Console.WriteLine("Please enter a number to find.");
+            linearIndex(int.Parse(Console.ReadLine()));
+
+            Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
         }
 
@@ -24,8 +25,8 @@ namespace LinearSearch
         public static int linearIndex(int searchNumber)
         {
 
-
-            using (var reader = new StreamReader(@"D:\Coding\unsorted_numbers.csv"))
+            //Initializes the csv as an array
+            using (var reader = new StreamReader("unsorted_numbers.csv"))
             {
 
                 int[] testArr = reader.ReadToEnd()
@@ -36,13 +37,15 @@ namespace LinearSearch
 
                 int n = testArr.Length;
 
+
+                //Referenced from ShellSort Project to sort in preparation for binary search
                 ShellSort.Program.shellSort(testArr, n);
 
                 int index = 0;
 
             searchLine: if (searchNumber == testArr[index])
                 {
-                    Console.WriteLine("found at! : {0}", index);
+                    Console.WriteLine("Number was found at Index : {0}", index);
                     return index;
                 }
 

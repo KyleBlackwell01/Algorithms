@@ -11,7 +11,7 @@ namespace InsertionSort
     {
         static void Main(string[] args)
         {
-            using (var reader = new StreamReader(@"D:\Coding\unsorted_numbers.csv"))
+            using (var reader = new StreamReader("unsorted_numbers.csv"))
             {
                 var testArr = reader.ReadToEnd()
                     .Split('\n')
@@ -58,7 +58,7 @@ namespace InsertionSort
                 {
                     Console.Write(testArr[i] + " ");
 
-                    SaveArrasCSV(testArr, @"D:\Coding\testArr2.csv");
+                    //SaveArrasCSV(testArr, @"D:\Coding\testArr2.csv");
                 }
 
             }
@@ -68,29 +68,29 @@ namespace InsertionSort
 
         }
 
-        public static void SaveArrasCSV(Array arrToSave, string fileName)
-        {
-            using (StreamWriter file = new StreamWriter(fileName))
-            {
-                WriteItemsToFile(arrToSave, file);
-            }
-        }
+        //public static void SaveArrasCSV(Array arrToSave, string fileName)
+        //{
+        //    using (StreamWriter file = new StreamWriter(fileName))
+        //    {
+        //        WriteItemsToFile(arrToSave, file);
+        //    }
+        //}
 
-        private static void WriteItemsToFile(Array items, TextWriter file)
-        {
-            foreach (object item in items)
-            {
-                if (item is Array)
-                {
-                    WriteItemsToFile(item as Array, file);
-                    file.Write(Environment.NewLine);
-                }
-                else
-                {
-                    file.Write(item + "\n");
-                }
-            }
-        }
+        //private static void WriteItemsToFile(Array items, TextWriter file)
+        //{
+        //    foreach (object item in items)
+        //    {
+        //        if (item is Array)
+        //        {
+        //            WriteItemsToFile(item as Array, file);
+        //            file.Write(Environment.NewLine);
+        //        }
+        //        else
+        //        {
+        //            file.Write(item + "\n");
+        //        }
+        //    }
+        //}
 
 
     }
