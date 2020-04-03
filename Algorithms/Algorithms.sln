@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertionSort", "InsertionS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShellSort", "ShellSort\ShellSort.csproj", "{FB8A4F78-7B45-4CB9-A758-F5C0DEB7D7EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinearSearch", "LinearSearch\LinearSearch.csproj", "{50BEB56D-D854-4494-98CB-DDD7BDC2B9BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearch", "BinarySearch\BinarySearch.csproj", "{97230FE7-1CED-400F-8A88-CBCBB6032C6D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{FB8A4F78-7B45-4CB9-A758-F5C0DEB7D7EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB8A4F78-7B45-4CB9-A758-F5C0DEB7D7EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB8A4F78-7B45-4CB9-A758-F5C0DEB7D7EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50BEB56D-D854-4494-98CB-DDD7BDC2B9BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50BEB56D-D854-4494-98CB-DDD7BDC2B9BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50BEB56D-D854-4494-98CB-DDD7BDC2B9BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50BEB56D-D854-4494-98CB-DDD7BDC2B9BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97230FE7-1CED-400F-8A88-CBCBB6032C6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97230FE7-1CED-400F-8A88-CBCBB6032C6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97230FE7-1CED-400F-8A88-CBCBB6032C6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97230FE7-1CED-400F-8A88-CBCBB6032C6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
