@@ -57,7 +57,7 @@ namespace ShellSort
                     //placeholder
                 }
 
-                int n = testArr.Length;
+                int n  = testArr.Length;
                 int i;
                 Console.WriteLine("Shell sort");
                 Console.WriteLine("Initial Array is: ");
