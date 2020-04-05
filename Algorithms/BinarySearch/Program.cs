@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ShellSort;
+using System.Diagnostics;
 
 namespace BinarySearch
 {
@@ -43,7 +44,11 @@ namespace BinarySearch
 
         public static void SearchNumber(Array testArr, int Test)
         {
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
             int testIndex = Array.BinarySearch(testArr, Test);
+            stopWatch.Stop();
+            TimeSpan ts = stopWatch.Elapsed;
             if(testIndex < 0)
             {
                 Console.WriteLine("The number to search for ({0}) was not found. The next number is at index {1}.", Test, ~testIndex);
@@ -51,6 +56,7 @@ namespace BinarySearch
             else
             {
                 Console.WriteLine("The number to search for ({0}) is at index {1}.", Test, testIndex);
+                Console.WriteLine("Total time taken: " + ts);
             }
         }
 
